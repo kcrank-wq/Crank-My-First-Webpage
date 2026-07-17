@@ -1,0 +1,259 @@
+/* ===========================
+   Kali Crank Portfolio
+   Forest Green & Blue Theme
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    line-height:1.7;
+
+    background-image:
+        linear-gradient(rgba(5,40,25,.75),
+        rgba(10,70,100,.65)),
+        url("images/woods-background.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ===========================
+        HEADER
+=========================== */
+
+.hero{
+
+    text-align:center;
+    padding:80px 20px;
+
+    background:rgba(0,40,25,.55);
+
+}
+
+.hero h1{
+
+    font-size:60px;
+    color:#ffffff;
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+        NAVIGATION
+=========================== */
+
+nav{
+
+    margin-top:20px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+
+    background:#0b6e4f;
+
+    padding:12px 22px;
+
+    margin:8px;
+
+    border-radius:30px;
+
+    display:inline-block;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    background:#1f9bcf;
+
+}
+
+/* ===========================
+        MAIN
+=========================== */
+
+main{
+
+    width:85%;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/* ===========================
+        SECTIONS
+=========================== */
+
+section{
+
+    background:rgba(255,255,255,.92);
+
+    color:#123028;
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+section h2{
+
+    color:#0b6e4f;
+
+    margin-bottom:15px;
+
+    font-size:36px;
+
+}
+
+section h3{
+
+    color:#1f9bcf;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+        PROFILE IMAGE
+=========================== */
+
+.profile-photo{
+
+    display:block;
+
+    width:420px;
+
+    max-width:100%;
+
+    margin:25px auto;
+
+    border-radius:20px;
+
+    border:6px solid #0b6e4f;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+/* ===========================
+      ARTICLES
+=========================== */
+
+article{
+
+    background:#f4f8f7;
+
+    padding:20px;
+
+    border-left:6px solid #1f9bcf;
+
+    margin-top:20px;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+        LIST
+=========================== */
+
+ol{
+
+    margin-left:30px;
+
+}
+
+li{
+
+    margin:12px 0;
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    background:#0b3d2e;
+
+    padding:25px;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+     MOBILE DEVICES
+=========================== */
+
+@media (max-width:768px){
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+nav a{
+
+    display:block;
+
+    margin:10px auto;
+
+    width:220px;
+
+}
+
+section{
+
+    padding:20px;
+
+}
+
+.profile-photo{
+
+    width:100%;
+
+}
+
+}
+
+
