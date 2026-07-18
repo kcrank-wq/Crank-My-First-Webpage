@@ -17,8 +17,7 @@ body{
 
     background-image:
         linear-gradient(rgba(5,40,25,.75),
-        rgba(10,70,100,.65)),
-        url("images/woods-background.jpeg");
+        rgba(10,70,100,.65));
 
     background-size:cover;
     background-position:center;
