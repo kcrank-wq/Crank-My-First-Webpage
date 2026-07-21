@@ -17,7 +17,8 @@ body{
 
     background-image:
         linear-gradient(rgba(5,40,25,.75),
-        rgba(10,70,100,.65));
+        rgba(10,70,100,.65)),
+        url('assets/pictures/Screenshot\ 2026-07-20\ 202704.png');
 
     background-size:cover;
     background-position:center;
