@@ -122,6 +122,30 @@ section{
 
 }
 
+/* ===========================
+        ID Selectors
+=========================== */
+#about{
+
+    border:4px solid #1f9bcf;
+
+}
+
+#experience{
+
+    border:4px solid #1f9bcf;
+}
+
+#goals{
+
+    border:4px solid #1f9bcf;
+}
+
+#contact{
+
+    border:4px solid #1f9bcf;
+}
+
 section h2{
 
     color:#0b6e4f;
