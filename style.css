@@ -239,6 +239,22 @@ footer{
 }
 
 /* ===========================
+     RESPONSIVE GRID LAYOUT
+=========================== */
+
+.content-grid{
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    gap: 25px;
+}
+
+.grid-item{
+    background: #f4f8f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ===========================
      MOBILE DEVICES
 =========================== */
 
