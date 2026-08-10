@@ -84,7 +84,7 @@ nav a{
 
 nav a:hover{
 
-    background:#1f9bcf;
+    background:#1d92c4;
 
 }
 
@@ -127,23 +127,23 @@ section{
 =========================== */
 #about{
 
-    border:4px solid #1f9bcf;
+    border:4px solid #033144;
 
 }
 
 #experience{
 
-    border:4px solid #1f9bcf;
+    border:4px solid #033144;
 }
 
 #goals{
 
-    border:4px solid #1f9bcf;
+    border:4px solid #033144;
 }
 
 #contact{
 
-    border:4px solid #1f9bcf;
+    border:4px solid #033144;
 }
 
 section h2{
@@ -158,7 +158,7 @@ section h2{
 
 section h3{
 
-    color:#1f9bcf;
+    color:#084864;
 
     margin-top:20px;
 
@@ -198,7 +198,7 @@ article{
 
     padding:20px;
 
-    border-left:6px solid #0f455c;
+    border-left:6px solid #053144;
 
     margin-top:20px;
 
