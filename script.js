@@ -9,12 +9,7 @@ const aboutButton = document.getElementById("aboutButton");
 aboutButton.addEventListener("click", function () {
 
 
-    const aboutSection = document.getElementById("about");
-
-
-    aboutSection.scrollIntoView({
-        behavior: "smooth"
-    });
+    window.location.href = "#about";
 
 
 });
