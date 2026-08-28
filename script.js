@@ -1,21 +1,3 @@
-// ==========================
-// SHOW ABOUT ME
-// ==========================
-
-
-const aboutButton = document.getElementById("aboutButton");
-
-
-aboutButton.addEventListener("click", function () {
-
-
-    window.location.href = "#about";
-
-
-});
-
-
-
 
 // ==========================
 // ADD SKILLS
@@ -110,6 +92,14 @@ addGoalButton.addEventListener("click", function () {
 
 
 
+skillInput.addEventListener("input", function () {
 
 
-
+    if (skillInput.value !== "") {
+        skillInput.style.fontWeight = "bold";
+        skillInput.style.fontSize = "18px";
+    } else {
+        skillInput.style.fontWeight = "normal";
+        skillInput.style.fontSize = "16px";
+    }
+});
