@@ -1,28 +1,20 @@
-// =========================
-// ABOUT ME
-// =========================
+// ==========================
+// SHOW ABOUT ME
+// ==========================
 
 
 const aboutButton = document.getElementById("aboutButton");
-const aboutText = document.getElementById("aboutText");
 
 
 aboutButton.addEventListener("click", function () {
 
 
-    if (aboutText.classList.contains("hidden")) {
+    const aboutSection = document.getElementById("about");
 
 
-        aboutText.classList.remove("hidden");
-        aboutButton.textContent = "Hide About Me";
-
-
-    } else {
-
-
-        aboutText.classList.add("hidden");
-        aboutButton.textContent = "Show About Me";
-    }
+    aboutSection.scrollIntoView({
+        behavior: "smooth"
+    });
 
 
 });
@@ -30,9 +22,9 @@ aboutButton.addEventListener("click", function () {
 
 
 
-// =========================
-// SKILLS
-// =========================
+// ==========================
+// ADD SKILLS
+// ==========================
 
 
 const skillInput = document.getElementById("skillInput");
@@ -56,10 +48,7 @@ addSkillButton.addEventListener("click", function () {
 
 
         const removeButton = document.createElement("button");
-
-
         removeButton.textContent = "Remove";
-        removeButton.classList.add("removeButton");
 
 
         removeButton.addEventListener("click", function () {
@@ -68,21 +57,21 @@ addSkillButton.addEventListener("click", function () {
 
 
         listItem.appendChild(removeButton);
-
-
         skillList.appendChild(listItem);
 
 
         skillInput.value = "";
     }
+
+
 });
 
 
 
 
-// =========================
-// GOALS
-// =========================
+// ==========================
+// ADD GOALS
+// ==========================
 
 
 const goalInput = document.getElementById("goalInput");
@@ -106,10 +95,7 @@ addGoalButton.addEventListener("click", function () {
 
 
         const removeButton = document.createElement("button");
-
-
         removeButton.textContent = "Remove";
-        removeButton.classList.add("removeButton");
 
 
         removeButton.addEventListener("click", function () {
@@ -118,39 +104,17 @@ addGoalButton.addEventListener("click", function () {
 
 
         listItem.appendChild(removeButton);
-
-
         goalList.appendChild(listItem);
 
 
         goalInput.value = "";
     }
-});
-
-
-
-
-// =========================
-// REMOVE ORIGINAL ITEMS
-// =========================
-
-
-const removeButtons = document.querySelectorAll(".removeButton");
-
-
-removeButtons.forEach(function (button) {
-
-
-    button.addEventListener("click", function () {
-
-
-        button.parentElement.remove();
-
-
-    });
 
 
 });
+
+
+
 
 
 
