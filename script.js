@@ -1,56 +1,156 @@
-// Button changes vvisible page content
+// =========================
+// ABOUT ME
+// =========================
 
-const changeButton = document.getElementById("change-button");
-const message = document.getElementById("message");
 
-changeButton.addEventListener("click", function() {
-    message.textContent =
-    "I am learning web development and working toward a career in cybersecurity!";
+const aboutButton = document.getElementById("aboutButton");
+const aboutText = document.getElementById("aboutText");
+
+
+aboutButton.addEventListener("click", function () {
+
+
+    if (aboutText.classList.contains("hidden")) {
+
+
+        aboutText.classList.remove("hidden");
+        aboutButton.textContent = "Hide About Me";
+
+
+    } else {
+
+
+        aboutText.classList.add("hidden");
+        aboutButton.textContent = "Show About Me";
+    }
+
+
 });
 
 
-// Style changes while the user types
 
-const nameInput = document.getElementById("name-input");
-const typingText = document.getElementById("typingText");
 
-nameInput.addEventListener("input", function() {
+// =========================
+// SKILLS
+// =========================
 
-    typingText.textContent = nameInput.value;
 
-    typingText.style.fontSize = "24px";
-    typingText.style.fontWeight = "bold";
+const skillInput = document.getElementById("skillInput");
+const addSkillButton = document.getElementById("addSkillButton");
+const skillList = document.getElementById("skillList");
 
-    if (nameInput.value === "") {
-        typingText.textContent =
-        "this text will change while you type.";
 
-        typingText.style.fontSize = "16px";
-        typingText.style.fontWeight = "normal";
+addSkillButton.addEventListener("click", function () {
+
+
+    const skill = skillInput.value.trim();
+
+
+    if (skill !== "") {
+
+
+        const listItem = document.createElement("li");
+
+
+        listItem.textContent = skill + " ";
+
+
+        const removeButton = document.createElement("button");
+
+
+        removeButton.textContent = "Remove";
+        removeButton.classList.add("removeButton");
+
+
+        removeButton.addEventListener("click", function () {
+            listItem.remove();
+        });
+
+
+        listItem.appendChild(removeButton);
+
+
+        skillList.appendChild(listItem);
+
+
+        skillInput.value = "";
     }
 });
 
 
-// Dynamic goal list
+
+
+// =========================
+// GOALS
+// =========================
+
 
 const goalInput = document.getElementById("goalInput");
 const addGoalButton = document.getElementById("addGoalButton");
 const goalList = document.getElementById("goalList");
 
-addGoalButton.addEventListener("click", function() {
 
-    const newGoal = goalInput.value.trim();
+addGoalButton.addEventListener("click", function () {
 
-    if (newGoal !== "") {
+
+    const goal = goalInput.value.trim();
+
+
+    if (goal !== "") {
+
 
         const listItem = document.createElement("li");
 
-        listItem.textContent = newGoal;
+
+        listItem.textContent = goal + " ";
+
+
+        const removeButton = document.createElement("button");
+
+
+        removeButton.textContent = "Remove";
+        removeButton.classList.add("removeButton");
+
+
+        removeButton.addEventListener("click", function () {
+            listItem.remove();
+        });
+
+
+        listItem.appendChild(removeButton);
+
 
         goalList.appendChild(listItem);
 
-        goalInput.value = "";
 
+        goalInput.value = "";
     }
 });
+
+
+
+
+// =========================
+// REMOVE ORIGINAL ITEMS
+// =========================
+
+
+const removeButtons = document.querySelectorAll(".removeButton");
+
+
+removeButtons.forEach(function (button) {
+
+
+    button.addEventListener("click", function () {
+
+
+        button.parentElement.remove();
+
+
+    });
+
+
+});
+
+
 

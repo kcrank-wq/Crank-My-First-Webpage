@@ -228,67 +228,88 @@ Information Technology.
 </section>
 
 <section id="interactive">
-    <h2>Interactive Information</h2>
+    <h2>Interactive JavaScript</h2>
 
 
+    <!-- ABOUT ME -->
     <div class="interactive-box">
-        <h3>About Me Message</h3>
+        <h3>About Me</h3>
 
 
-        <p id="message">
-            Click the button to learn something about me!
+        <button id="aboutButton">Show About Me</button>
+
+
+        <p id="aboutText" class="hidden">
+            My name is Kali Crank. I am a web development student
+            working toward a future career in cybersecurity.
         </p>
-
-
-        <button id="changeButton">Click Me</button>
     </div>
 
 
 
 
+    <!-- SKILLS -->
     <div class="interactive-box">
-        <h3>Skills</h3>
-
-
-        <label for="nameInput">
-            Type something:
-        </label>
+        <h3>My Skills</h3>
 
 
         <input
             type="text"
-            id="nameInput"
-            placeholder="Start typing..."
+            id="skillInput"
+            placeholder="Enter a new skill"
         >
 
 
-        <p id="typingText">
-            This text will change while you type.
-        </p>
+        <button id="addSkillButton">Add Skill</button>
+
+
+        <ul id="skillList">
+            <li>
+                Web Development
+                <button class="removeButton">Remove</button>
+            </li>
+
+
+            <li>
+                Communication
+                <button class="removeButton">Remove</button>
+            </li>
+        </ul>
     </div>
 
 
 
 
+    <!-- GOALS -->
     <div class="interactive-box">
-        <h3>My Goals List</h3>
+        <h3>My Goals</h3>
 
 
         <input
             type="text"
             id="goalInput"
             placeholder="Enter a new goal"
-            
         >
+
 
         <button id="addGoalButton">Add Goal</button>
 
-        <ul id="goalsList">
-            <li>Finish my web development courses</li>
-            <li>Build my cybersecurity skills</li>
+
+        <ul id="goalList">
+            <li>
+                Finish my web development courses
+                <button class="removeButton">Remove</button>
+            </li>
+
+
+            <li>
+                Build my cybersecurity skills
+                <button class="removeButton">Remove</button>
+            </li>
         </ul>
     </div>
 </section>
+
 
 
 
