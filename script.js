@@ -103,3 +103,67 @@ skillInput.addEventListener("input", function () {
         skillInput.style.fontSize = "16px";
     }
 });
+
+// ==========================
+// CONTACT FORM VALIDATION
+// ==========================
+
+const contactForm = document.getElementById("contactForm");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
+const messageInput = document.getElementById("message");
+
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+const phoneError = document.getElementById("phoneError");
+const messageError = document.getElementById("messageError");
+
+const formSuccess = document.getElementById("formSuccess");
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let isValid = true;
+
+    // Clear old messages
+    nameError.textContent = "";
+    emailError.textContent = "";
+    phoneError.textContent = "";
+    messageError.textContent = "";
+    formSuccess.textContent = "";
+
+    // Check name
+    if (nameInput.value.trim() === "") {
+        nameError.textContent = "Please enter your name.";
+        isValid = false;
+    }
+
+    // Check email
+    if (emailInput.value.trim() === "") {
+        emailError.textContent = "Please enter your email.";
+        isValid = false;
+    } else if (!emailInput.value.includes("@")) {
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    // Check phone
+    if (phoneInput.value.trim() === "") {
+        phoneError.textContent = "Please enter your phone number.";
+        isValid = false;
+    }
+
+    // Check message
+    if (messageInput.value.trim() === "") {
+        messageError.textContent = "Please enter a message.";
+        isValid = false;
+    }
+
+    // If everything is correct
+    if (isValid) {
+        formSuccess.textContent = "Your message was submitted successfully!";
+    }
+});
