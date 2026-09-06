@@ -450,3 +450,56 @@ section{
 .aboutButton:hover {
     transform: scale(1.05);
 }
+
+/* ===========================
+       CONTACT FORM
+=========================== */
+
+#form-section {
+    max-width: 700px;
+    margin: 35px auto;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #0b6e4f;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+}
+
+#contactForm button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0b6e4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #1d92c4;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
