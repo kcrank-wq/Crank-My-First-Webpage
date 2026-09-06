@@ -187,7 +187,8 @@ adviceButton.addEventListener("click", function () {
     adviceResult.textContent = "Loading...";
     apiError.textContent = "";
 
-    fetch("https://api.adviceslip.com/advice")
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+
 
         .then(function (response) {
 
@@ -200,7 +201,7 @@ adviceButton.addEventListener("click", function () {
 
         .then(function (data) {
 
-            adviceResult.textContent = data.slip.advice;
+            adviceResult.textContent = "API Result: " + data.title;
         })
 
         .catch(function (error) {
