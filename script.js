@@ -173,3 +173,42 @@ emailInput.addEventListener("input", function() {
         emailError.textContent = "";
     }
 });
+
+// ==========================
+// BONUS API FETCH
+// ==========================
+
+const adviceButton = document.getElementById("adviceButton");
+const adviceResult = document.getElementById("adviceResult");
+const apiError = document.getElementById("apiError");
+
+adviceButton.addEventListener("click", function () {
+
+    adviceResult.textContent = "Loading...";
+    apiError.textContent = "";
+
+    fetch("https://api.adviceslip.com/advice")
+
+        .then(function (response) {
+
+            if (!response.ok) {
+                throw new Error("API request failed");
+            }
+
+            return response.json();
+        })
+
+        .then(function (data) {
+
+            adviceResult.textContent = data.slip.advice;
+        })
+
+        .catch(function (error) {
+
+            adviceResult.textContent = "";
+            apiError.textContent = "Sorry, the advice could not be loaded.";
+
+            console.error(error);
+        });
+
+});
