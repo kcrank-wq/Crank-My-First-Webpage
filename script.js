@@ -167,3 +167,9 @@ contactForm.addEventListener("submit", function(event) {
         formSuccess.textContent = "Your message was submitted successfully!";
     }
 });
+
+emailInput.addEventListener("input", function() {
+    if (emailInput.value.includes("@")) {
+        emailError.textContent = "";
+    }
+});
